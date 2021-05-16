@@ -38,7 +38,7 @@ print("""
     1) Wep Cracking
     2) Wpa2 Cracking
     3) Deauth Attack
-
+ 
 """)
 
 soru = input("root@eyll:~# ")
