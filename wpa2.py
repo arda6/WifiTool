@@ -1,5 +1,6 @@
 import os , time , pyautogui
 import webbrowser
+import sys
 print("""
 
     ███████████████████████████████
@@ -19,6 +20,22 @@ print("""
 
 
 """)
+
+pla = sys.platform
+if pla == "win32":
+    win = "Windows"
+    print("     [!] Your Platform is " +win+ "\n")
+elif pla == "darwin":
+    mac = "MacOs"
+    print("     [+] Your Platform is " +mac+ "\n")
+elif pla == "linux":
+    mac = "Linux"
+    print("     [+] Your Platform is " +mac+"\n")
+if pla == "win32":
+    print("     [!] Not Suitable For Tool Windows \n")
+    time.sleep(3)
+    exit("     [#] https://www.github/arda6")
+
 os.system("sudo airmon-ng start")
 print("░░░░░░░░░░░░░░░░░░░░ ═")
 wifi = input("░░Select Wifi Card░░ ═ \n░░░░░░░░░░░░░░░░░░░░ ═ ")
